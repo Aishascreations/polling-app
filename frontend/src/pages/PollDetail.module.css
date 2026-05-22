@@ -1,0 +1,181 @@
+.header {
+  padding: 40px 0 28px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.badgeActive {
+  background: rgba(200, 240, 76, 0.15);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(200, 240, 76, 0.3);
+}
+
+.badgeClosed {
+  background: rgba(255,255,255,0.06);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+}
+
+.by { color: var(--text-muted); font-size: 0.875rem; }
+
+.title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  transition: border-color 0.2s;
+}
+
+.optionVotable {
+  cursor: pointer;
+}
+
+.optionVotable:hover {
+  border-color: var(--accent2);
+}
+
+.optionSelected {
+  border-color: var(--accent) !important;
+}
+
+.optionResult {
+  cursor: default;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(124, 92, 252, 0.12);
+  transition: width 0.5s ease;
+  border-radius: 12px;
+}
+
+.optionContent {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+}
+
+.optionLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.radioSelected {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(200,240,76,0.2);
+}
+
+.optionText {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.yourVote {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.optionRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pct {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--accent2);
+  min-width: 42px;
+  text-align: right;
+}
+
+.count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 30px;
+  text-align: right;
+}
+
+.loginNote {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 8px 0 16px;
+}
+
+.loginNote a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.voteRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.footer {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+}
